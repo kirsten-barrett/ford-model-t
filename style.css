@@ -1,0 +1,161 @@
+#banner {
+  width: 800px;
+  height: 90px;
+  position: relative;
+  padding: 10px;
+  margin: 10px;
+}
+
+#device {
+  background-image: url("img/tech.png");
+  background-repeat: no-repeat;
+  width: 800px;
+  height: 580px;
+  position: relative;
+}
+
+#pause {
+  position: absolute;
+  height: 50px;
+  top: 460px;
+  left: 865px;
+}
+
+#pause:hover {
+  transform: scale(1.2);
+}
+
+#b1 {
+  position: absolute;
+  top: 420px;
+  left: 565px;
+  transition: 1s;
+}
+
+#b1:hover {
+  transform: rotate(360deg);
+}
+
+#b2 {
+  position: absolute;
+  top: 113px;
+  left: 132px;
+  transition: 1s;
+}
+
+#b2:hover {
+  transform: rotate(360deg);
+}
+
+#b3 {
+  position: absolute;
+  top: 158px;
+  left: 590px;
+  transition: .5s;
+}
+
+#b3:hover {
+  transform: scale(1.5);
+}
+
+#b4 {
+  position: absolute;
+  top: 73px;
+  left: 665px;
+  transition: .5s;
+}
+
+#b4:hover {
+  transform: scale(1.8);
+}
+
+#b5 {
+  position: absolute;
+  top: 192px;
+  left: 7px;
+  transition: 1s;
+}
+
+#b5:hover {
+  transform: rotateX(360deg);
+}
+
+.f1 {
+  position: absolute;
+  width: 160px;
+  height: 250px;
+  top: 100px;
+  left: 810px;
+  border: 5px solid white;
+  background-color: #f6ece0;
+  padding: 20px;
+  display: none;
+}
+
+.f2 {
+  position: absolute;
+  width: 160px;
+  height: 270px;
+  top: 100px;
+  left: 810px;
+  border: 5px solid white;
+  background-color: #f6ece0;
+  padding: 10px;
+  display: none;
+}
+
+.f3 {
+  position: absolute;
+  width: 160px;
+  height: 300px;
+  top: 100px;
+  left: 810px;
+  border: 5px solid white;
+  background-color: #f6ece0;
+  padding: 10px;
+  display: none;
+}
+
+.f4 {
+  position: absolute;
+  width: 160px;
+  height: 230px;
+  top: 100px;
+  left: 810px;
+  border: 5px solid white;
+  background-color: #f6ece0;
+  padding: 10px;
+  display: none;
+}
+
+.f5 {
+  position: absolute;
+  width: 160px;
+  height: 260px;
+  top: 100px;
+  left: 810px;
+  border: 5px solid white;
+  background-color: #f6ece0;
+  padding: 10px;
+  display: none;
+}
+
+body {
+  background-color: #f6ece0;
+  font-family: Verdana;
+}
+
+p {
+  font-family: Verdana;
+  font-size: 16px;
+
+}
+
+h1 {
+  font-size: 38px;
+  font-family: Times New Roman;
+}
+
+h3 {
+  font-family: Times New Roman;
+}

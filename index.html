@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Ford Model T</title>
+  <link href="style.css" rel="stylesheet" type="text/css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1/jquery-ui.min.js"></script>
+</head>
+
+<body>
+  <div id="banner">
+    <p>Learn about the</p>
+    <h1>Ford Model T</h1>
+  </div> <!-- close banner div -->
+
+  <div id="device">
+    <img src="img/pause.png" id="pause">
+
+    <img src="img/b1.png" id="b1">
+    <audio id="sound1"><source src="audio/2.mp3" type="audio/mp3"></audio>
+
+    <img src="img/b2.png" id="b2">
+    <audio id="sound2"><source src="audio/1.mp3" type="audio/mp3"></audio>
+
+    <img src="img/b3.png" id="b3">
+    <audio id="sound3"><source src="audio/2.mp3" type="audio/mp3"></audio>
+
+    <img src="img/b4.png" id="b4">
+    <audio id="sound4"><source src="audio/1.mp3" type="audio/mp3"></audio>
+
+    <img src="img/b5.png" id="b5">
+    <audio id="sound5"><source src="audio/2.mp3" type="audio/mp3"></audio>
+
+    <div class="f1">
+      <h3><center>ENGINE</center></h3><p>The Ford Model T, invented by Henry Ford, was released on October 1, 1908. It has an enclosed four-cylinder engine with a detachable cylinder head.</p>
+    </div> <!-- close fact 1 div -->
+
+    <div class="f2">
+      <h3><center>HORN</center></h3><p>Miller Reese Hutchinson patened the Klaxon (“ahooga”) horn in 1908. The Klaxon horn was used in most Model T’s and is known for it’s unforgettable sound.</p>
+    </div> <!-- close fact 2 div -->
+
+    <div class="f3">
+      <h3><center>HEADLIGHTS</center></h3><p>The headlights in a Ford Model T were Acetylene lamps fueled by Acetylene gas. To start the light the driver is required to open the headlight cover and light the gas to produce a flame that the headlight lense reflects.</p>
+    </div> <!-- close fact 3 div -->
+
+    <div class="f4">
+      <h3><center>STEERING WHEEL</center></h3><p>The Model T had a left-sided steering wheel and the transmission was controlled by three foot pedals and a hand lever.</p>
+    </div> <!-- close fact 4 div -->
+
+    <div class="f5">
+      <h3><center>WHEELS</center></h3><p>Before 1925 all Ford wheels had rims that clinched the wheel into place. Fun Fact: Ford factories produced more than 15 million Model Ts between 1913 and 1927.</p>
+    </div> <!-- close fact 5 div -->
+
+  </div> <!-- close device div -->
+
+</body>
+
+<script>
+
+$('#pause').click(function(){
+ $('#sound1').trigger("pause").prop("currentTime",0);
+ $('#sound2').trigger("pause").prop("currentTime",0);
+ $('#sound3').trigger("pause").prop("currentTime",0);
+ $('#sound4').trigger("pause").prop("currentTime",0);
+ $('#sound5').trigger("pause").prop("currentTime",0);
+});
+
+$('#b1').click(function() {
+  $('.f1').show("fade");
+        $('.f2').hide("fade");
+        $('.f3').hide("fade");
+        $('.f4').hide("fade");
+        $('.f5').hide("fade");
+  $('#sound1').trigger("play");
+  $('#sound2').trigger("pause").prop("currentTime",0);
+  $('#sound3').trigger("pause").prop("currentTime",0);
+  $('#sound4').trigger("pause").prop("currentTime",0);
+  $('#sound5').trigger("pause").prop("currentTime",0);
+});
+
+$('#b2').click(function() {
+  $('.f2').show("fade");
+        $('.f1').hide("fade");
+        $('.f3').hide("fade");
+        $('.f4').hide("fade");
+        $('.f5').hide("fade");
+  $('#sound2').trigger("play");
+  $('#sound1').trigger("pause").prop("currentTime",0);
+  $('#sound3').trigger("pause").prop("currentTime",0);
+  $('#sound4').trigger("pause").prop("currentTime",0);
+  $('#sound5').trigger("pause").prop("currentTime",0);
+});
+
+$('#b3').click(function() {
+  $('.f3').show("fade");
+        $('.f2').hide("fade");
+        $('.f1').hide("fade");
+        $('.f4').hide("fade");
+        $('.f5').hide("fade");
+  $('#sound3').trigger("play");
+  $('#sound1').trigger("pause").prop("currentTime",0);
+  $('#sound2').trigger("pause").prop("currentTime",0);
+  $('#sound4').trigger("pause").prop("currentTime",0);
+  $('#sound5').trigger("pause").prop("currentTime",0);
+});
+
+$('#b4').click(function() {
+  $('.f4').show("fade");
+        $('.f2').hide("fade");
+        $('.f3').hide("fade");
+        $('.f1').hide("fade");
+        $('.f5').hide("fade");
+  $('#sound4').trigger("play");
+  $('#sound1').trigger("pause").prop("currentTime",0);
+  $('#sound2').trigger("pause").prop("currentTime",0);
+  $('#sound3').trigger("pause").prop("currentTime",0);
+  $('#sound5').trigger("pause").prop("currentTime",0);
+});
+
+$('#b5').click(function() {
+  $('.f5').show("fade");
+        $('.f2').hide("fade");
+        $('.f3').hide("fade");
+        $('.f4').hide("fade");
+        $('.f1').hide("fade");
+  $('#sound5').trigger("play");
+  $('#sound1').trigger("pause").prop("currentTime",0);
+  $('#sound2').trigger("pause").prop("currentTime",0);
+  $('#sound3').trigger("pause").prop("currentTime",0);
+  $('#sound4').trigger("pause").prop("currentTime",0);
+});
+
+</script>
+
+</html>
